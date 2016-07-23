@@ -6,6 +6,7 @@ package org.mvnit.rest;
 
 import java.io.IOException;
 
+import org.mvnit.utils.CoreUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +19,8 @@ public class SimpleController {
     @RequestMapping("/index")
     @ResponseBody
     public String index() {
-        return new String("test");
+
+        return CoreUtil.formatString("test");
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)

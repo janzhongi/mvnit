@@ -13,6 +13,7 @@
     <entry_points version="2.0" />
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/mvnit-server" />
     <file type="web" url="file://$PROJECT_DIR$/mvnit-web" />
   </component>
   <component name="MavenProjectsManager">
